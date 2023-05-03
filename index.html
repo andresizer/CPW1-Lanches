@@ -102,33 +102,36 @@
             <div class="cont-externo-contato">     
                 <h1>Fale conosco:</h1>   
                 <div id="cont-int-contato">
-                    <form method="post" id="form_contatos">
-                        <p>
-                            <label for="input_nome">Nome: </label>
-                            <input type="text" name="input_nome" id="c_nome" placeholder="Nome e sobrenome">
-                        </p>
-                        <p>
-                            <label for="input_email">Email: </label>
-                            <input type="email" name="input_email" id="c_email" placeholder="email@email.com">
-                        </p>
-                        <p>
-                            <label for="input_msg">Mensagem: </label>
-                            <textarea type="text" name="input_msg" id="c_msg" cols="45" rows="5" placeholder="Escreva aqui sua mensagem!"></textarea>
-                        </p>
-                        <fieldset id="fieldset_aval">
-                            <legend>Avalie nosso site: </legend>
+                    <div id="cont-form">
+                        <form method="post" id="form_contatos">
                             <p>
-                                <input type="radio" class="radiobutton" name="input_aval" id="c_ruim"> Ruim
-
-                                <input type="radio" class="radiobutton" name="input_aval" id="c_medio">Médio
-
-                                <input type="radio" class="radiobutton" name="input_aval" id="c_bom">Bom
+                                <label for="input_nome">Nome: </label>
+                                <input type="text" name="input_nome" id="c_nome" placeholder="Nome e sobrenome">
                             </p>
-                        </fieldset>                
-                        <input type="submit" id="submitbutton" value="Enviar"/>
-                    </form>
+                            <p>
+                                <label for="input_email">Email: </label>
+                                <input type="email" name="input_email" id="c_email" placeholder="email@email.com">
+                            </p>
+                            <p>
+                                <label for="input_msg">Mensagem: </label>
+                                <textarea type="text" name="input_msg" id="c_msg" cols="45" rows="5" placeholder="Escreva aqui sua mensagem!"></textarea>
+                            </p>
+                            <fieldset id="fieldset_aval">
+                                <legend>Avalie nosso site: </legend>
+                                <p>
+                                    <input type="radio" class="radiobutton" name="input_aval" id="c_ruim"> Ruim
+
+                                    <input type="radio" class="radiobutton" name="input_aval" id="c_medio">Médio
+
+                                    <input type="radio" class="radiobutton" name="input_aval" id="c_bom">Bom
+                                </p>
+                            </fieldset>                
+                            <input type="submit" id="submitbutton" value="Enviar"/>
+                        </form>
+                    </div>
+                    <img src="img/contato_img.png" alt="" class="img-contato">                    
+                </div>
                 <button class="voltar" onclick="location.href='#sobre'">topo</button>
-            </div>
             </div>
         </div>
 
