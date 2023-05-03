@@ -147,7 +147,8 @@
     background-color: green;
     height: 350px;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 100px;
     border-radius: 10px;
 }
 
@@ -158,6 +159,16 @@
     float: left;
     width: 500px;
     margin: auto;
+}
+
+#cont-form {
+    float: left;
+}
+
+.img-contato {
+    position: relative;
+    height: 60%;
+    margin-top: 5%;
 }
 
 input, textarea {
@@ -184,6 +195,9 @@ input:hover, textarea:hover {
 
 #submitbutton {
     position: relative;
+    align-self: center;
+    margin: 5%;
+    margin-left: 10%;
     bottom: 0;
 }
 
