@@ -7,13 +7,12 @@
 .site {
     position: relative;
     width: 80%;
-
 }
 
 .topo {
     position: fixed;
     width: 80%;
-    height: 25%;
+    height: 18%;
     border: 2px solid black;
     z-index: 1;
     
@@ -36,6 +35,15 @@
 
 }
 
+.cont-externo-contato {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    top: 170px;
+    background-color: purple;
+    padding: 20px;
+    margin: -15px;
+}
 .cont-int {
     position: relative;
     background-color: green;
