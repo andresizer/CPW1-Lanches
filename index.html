@@ -47,6 +47,7 @@
         <div id="cardapio">
             <div class="cont-externo">
                 <h1>cardapio</h1>
+                <div class="itens-sec">
                     <h2>bebidas</h2>
                         <div class="cont-itens">
                             <img src="" alt="" class="imgItens">
@@ -68,6 +69,8 @@
                             <img src="" alt="" class="imgItens">
                             <div class="descItens"></div>
                         </div>
+                </div>
+                <div class="itens-sec">
                     <h2>lanches</h2>
                         <div class="cont-itens">
                             <img src="" alt="" class="imgItens">
@@ -89,8 +92,7 @@
                             <img src="" alt="" class="imgItens">
                             <div class="descItens"></div>
                         </div>
-
-
+                </div>
                 <button class="voltar" onclick="location.href='#sobre'">topo</button>
             </div>
         </div>
@@ -116,14 +118,14 @@
                         <fieldset id="fieldset_aval">
                             <legend>Avalie nosso site: </legend>
                             <p>
-                                <input type="radio" name="input_aval" id="c_ruim"> Ruim
+                                <input type="radio" class="radiobutton" name="input_aval" id="c_ruim"> Ruim
 
-                                <input type="radio" name="input_aval" id="c_medio">Médio
+                                <input type="radio" class="radiobutton" name="input_aval" id="c_medio">Médio
 
-                                <input type="radio" name="input_aval" id="c_bom">Bom
+                                <input type="radio" class="radiobutton" name="input_aval" id="c_bom">Bom
                             </p>
                         </fieldset>                
-                        <input type="submit" value="Enviar"/>
+                        <input type="submit" id="submitbutton" value="Enviar"/>
                     </form>
                 <button class="voltar" onclick="location.href='#sobre'">topo</button>
             </div>
