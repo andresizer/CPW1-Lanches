@@ -46,8 +46,8 @@ h1 {
     top: 170px;
     background-color: purple;
     padding: 20px;
-    margin: -15px;
 }
+
 .cont-int {
     position: relative;
     background-color: green;
@@ -150,10 +150,9 @@ h1 {
 #cont-int-contato {
     position: relative;
     background-color: green;
-    height: 350px;
+    height: 400px;
     margin: 10px;
-    padding: 10px;
-    padding-left: 100px;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -163,7 +162,8 @@ h1 {
     position: relative;
     float: left;
     width: 500px;
-    margin: auto;
+    margin: 20px;
+    margin-left: 100px;
 }
 
 #cont-form {
@@ -172,7 +172,7 @@ h1 {
 
 .img-contato {
     position: relative;
-    height: 60%;
+    height: 50%;
     margin-top: 5%;
 }
 
