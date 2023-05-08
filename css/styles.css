@@ -1,19 +1,20 @@
-*{
-    margin:0 auto;
-    
+body{
+    background-color: rgba(128, 128, 128, 0.461);
 
 }
 
 .site {
-    position: relative;
-    width: 80%;
+    position: absolute;
+    width: 90%;
 
 }
 
 .topo {
-    position: fixed;
-    width: 80%;
-    height: 25%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    width: 100%;
     border: 2px solid black;
     z-index: 1;
     
@@ -21,9 +22,8 @@
 
 .itopo {
     position: relative;
-    height: 130px;
+    aspect-ratio: 21 / 9;
     width: 100%;
-    border: 2px solid red;
 }
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
     position: relative;
     height: 600px;
     width: 100%;
-    top: 170px;
+    top: 45vmax;
     background-color: purple;
     padding: 20px;
 
