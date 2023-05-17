@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: rgba(128, 128, 128, 0.461);
+    font-family: 'Concert One', cursive;
 
 }
 
@@ -10,39 +17,73 @@ body{
 }
 
 .topo {
+    display: flex;
+    background: linear-gradient(rgba(250,185,0,255), rgba(241,155,0,255), rgba(248,178,0,255)) ;
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 5px;
     width: 100%;
-    border: 2px solid black;
+    height: 12rem;
+    /* border: 2px solid black; */
     z-index: 1;
+    justify-content: center;
+
     
 }
 
 .itopo {
-    position: relative;
-    aspect-ratio: 21 / 9;
-    width: 100%;
+    position: absolute;
+    top: 2px;
+    aspect-ratio: 28 / 9;
+    /* width: 80%; */
+    height: 10rem;
+    margin: auto;
+    display: block;
+
 }
 
-h1 {
-    font-family: sans-serif;
+.menu {
+    position: absolute;
+    bottom: 0.5rem;
+    display: inline;
 }
+
+.menu a {
+    color:black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color:rgba(219, 79, 36, 0.74) ;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    }
+
+.menu a:hover {
+    background-color:rgba(255, 1, 1, 0.534) ;
+    color: white;
+    
+}    
+
+
 
 .cont-externo {
     position: relative;
     height: 600px;
     width: 100%;
-    top: 45vmax;
-    background-color: purple;
+    top: 10rem;
+    background-color: white;
     padding: 20px;
 
 }
 
 .cont-int {
     position: relative;
-    background-color: green;
+    background-color: rgba(250,185,0,255);
     height: 130px;
     margin: 10px;
     padding: 5px;
