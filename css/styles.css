@@ -246,11 +246,12 @@ input:hover, textarea:hover {
     bottom: 0;
 }
 
-#cont-ext-reservas {
-    background-color: green;
+#cont-ext-reservas {    
+    background-color: rgba(250,185,0,255);
     height: 400px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 10%;
     margin-bottom: 1%;
     
 }
@@ -258,7 +259,7 @@ input:hover, textarea:hover {
 #reserv-form {
     float: left;
     margin: 20px;
-    margin-top: 50px;
+    margin-top: 5px;
     margin-left: 8%;
     /*border: 2px solid black;*/
 }
@@ -273,5 +274,5 @@ input:hover, textarea:hover {
 #submit-reservas {
     position: relative;
     margin: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
