@@ -183,19 +183,19 @@ body{
 #contato {
     position: relative;
     width: 100%;
-    margin: 10px;
-    padding: 5px;
 }
 
+/*
 #cont-int-contato {
     position: relative;
-    background-color: green;
+    background-color: rgba(250,185,0,255);
     height: 350px;
     margin: 10px;
     padding: 10px;
     padding-left: 100px;
     border-radius: 10px;
 }
+*/
 
 #form_contatos {
     font-family: 'Concert One', cursive;
@@ -203,7 +203,7 @@ body{
     position: relative;
     float: left;
     width: 500px;
-    margin: auto;
+    margin-left: 100px;
 }
 
 #cont-form {
@@ -267,7 +267,7 @@ input:hover, textarea:hover {
 .img-reserva {    
     position: relative;
     height: 80%;
-    margin: 20px;
+    margin: 50px;
     margin-left: 15%;
 }
 
@@ -275,4 +275,45 @@ input:hover, textarea:hover {
     position: relative;
     margin: 5%;
     margin-top: 5%;
+}
+
+/*
+.cont-externo-contato {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    top: 170px;
+    background-color: rgba(250,185,0,255);
+    padding: 20px;
+}
+*/
+
+#cont-int-contato {
+    position: relative;
+    background-color: rgba(250,185,0,255);
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#cont-ext-contato {    
+    background-color: rgba(250,185,0,255);
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 10%;
+    margin-bottom: 1%;
+    
+}
+
+#cont-form {
+    float: left;
+}
+
+.img-contato {
+    position: relative;
+    height: 50%;
+    margin-top: 8%;
+    filter: invert(100%);
 }
