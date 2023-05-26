@@ -126,7 +126,7 @@ p {
     margin: 1rem;
 }
 
-.img {
+.imgItens {
     position: relative;
     display: flex;
     aspect-ratio: 4 / 3;
