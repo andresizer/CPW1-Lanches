@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- CONTAINER COM TODO O CONTEUDO -->
-    <div class="site">
         <!-- CONTAINER DO BANNER + MENU DO TOPO -->
-        <div class="topo">
-            <img src="img/banner-amarelo1.png" alt="" class="itopo">
-            <img src="img/mascot_images/mascote_sobre.png" alt="" class="mascote" id="mascote">            
-            
+        <header class="topo">
+            <div class="imagens-topo">
+                <img src="img/banner-amarelo1.png" alt="" class="itopo">
+                <img src="img/mascot_images/mascote_sobre.png" alt="" class="mascote" id="mascote"> 
+            </div>
+
             <div class="menu">
                 <a href="#sobre" class="mtopo mhome" onmouseover="change_mascot_on('img/mascot_images/mascote_sobre.png')"
                                                      onmouseout="change_mascot_out()"
@@ -37,10 +37,10 @@
                                                      onclick="change_mascot_click('img/mascot_images/mascote_contato.png')">contato</a>
             </div>
             
-        </div>
+        </header>
         
         <!-- CONTAINER INICIAL -->
-        <div id="sobre">
+        <section id="sobre">
             <div class="cont-externo">
                 <h1>Sobre</h1>
                 <div class="cont-int">
@@ -60,13 +60,12 @@
                     <div class="textoSobre">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quam, nemo odio animi, incidunt natus placeat mollitia enim excepturi nihil quibusdam non perferendis officiis autem maxime minus, ab dolore saepe. Esse, officiis accusamus dolore cum ab exercitationem aut quo similique eveniet itaque. Molestias in libero deleniti, tempora autem perferendis sint.</p>
                     </div>
-                </div>
-                
+                </div> 
             </div>
-        </div>
+        </section>
 
         <!-- CONTAINER CARDÁPIO -->
-        <div id="cardapio">
+        <section id="cardapio">
             <div class="cont-externo">
                 <h1>Cardápio</h1>
                 <h2>Lanches</h2>
@@ -112,9 +111,9 @@
                 </div>
                 <button class="voltar" onclick="location.href='#sobre'">topo</button>
             </div>
-        </div>
+        </section>
         <!-- CONTAINER INFORMAÇÃO -->
-        <div id="informacao">
+        <section id="informacao">
             <div class="cont-externo">
                 <h1>Informações</h1>
                 <h2>Como pedir delivery</h2>
@@ -149,6 +148,11 @@
                 <div class="info-sec">
                     <div class="cont-itens">
                         <img src="./img/safra-removebg-preview.png" alt="" class="imgItens1">
+                        <ul class="formas-pagamento">
+                            <li>Dinheiro</li>
+                            <li>PIX</li>
+                            <li>Cartões</li>
+                        </ul>
                     </div>
                 </div>
                 <h2>Redes Sociais</h2>
@@ -165,90 +169,73 @@
                 </div>
                 <button class="voltar" onclick="location.href='#sobre'">topo</button>
             </div>
-        </div>
+        </section>
 
         <!-- CONTAINER RESERVAS -->
-        <div id="reservas">
+        <section id="reservas">
             <div class="cont-externo">                
                 <h1>Reservas</h1>  
-                <div id="cont-ext-reservas"> 
-                        <div id="reserv-form">
-                            <form method="post" id="form-reservas">
-                                <p>
-                                    <label for="input_nome">Nome: </label>
-                                    <input type="text" name="input_nome" id="c_nome" placeholder="Nome e sobrenome">
-                                </p>
-                                <p>
-                                    <label for="input_email">Email: </label>
-                                    <input type="email" name="input_email" id="c_email" placeholder="email@email.com">
-                                </p>
-                                <p>
-                                    <label for="input_numpes">Nº de pessoas: </label>
-                                    <input type="number" name="input_numpes" id="c_numpes" >
-                                </p>
-                                <p>
-                                    <label for="input_data">Data: </label>
-                                    <input type="date" name="input_data" id="c_data" >
-                                </p>
-                                <p>
-                                    <label for="input_horario">Horário: </label>
-                                    <input type="time" name="input_horario" id="c_horario" >
-                                </p>
-                                                
-                                <input type="submit" id="submit-reservas" value="Enviar"/>
+                <div class="cont-int"> 
+                            <form method="post" class="formulario">
+                                <label for="input_nome">Nome: </label>
+                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome">
+                                    
+                                <label for="input_email">Email: </label>   
+                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com">
+
+                                <label for="input_numpes">Nº de pessoas: </label>
+                                <input type="number" name="input_numpes" class="item-form" id="c_numpes" >
+                                    
+                                <label for="input_data">Data: </label>
+                                <input type="date" name="input_data" id="c_data" class="item-form">
+                             
+                                <label for="input_horario">Horário: </label>
+                                <input type="time" name="input_horario" class="item-form" id="c_horario" >
+                                         
+                                <input type="submit" id="submit-reservas" class="item-form" value="Enviar"/>
                             </form>
-                        </div>
                         <img src="img/reserva_img.png" alt="" class="img-reserva">                    
                     </div>
                 <button class="voltar" onclick="location.href='#sobre'">topo</button>
             </div>
-        </div>
+        </section>
 
         <!-- CONTAINER CONTATO -->
-        <div id="contato">
+        <section id="contato">
             <div class="cont-externo">
                 <h1>Fale conosco</h1>
-                <div id="cont-ext-contato">
-                    <div id="cont-form">
-                        <form method="post" id="form_contatos">
-                            <p>
+                <div class="cont-int">
+                        <form method="post" class="formulario">
                                 <label for="input_nome">Nome: </label>
-                                <input type="text" name="input_nome" id="c_nome" placeholder="Nome e sobrenome">
-                            </p>
-                            <p>
+                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome">
+                           
                                 <label for="input_email">Email: </label>
-                                <input type="email" name="input_email" id="c_email" placeholder="email@email.com">
-                            </p>
-                            <p>
+                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com">
+                           
                                 <label for="input_msg">Mensagem: </label>
-                            <br/>
-                                <textarea type="text" name="input_msg" id="c_msg" cols="45" rows="3" placeholder="Escreva aqui sua mensagem!"></textarea>
-                            </p>
+                                <textarea type="text" name="input_msg" id="c_msg" cols="45" rows="3" class="item-form" placeholder="Escreva aqui sua mensagem!"></textarea>
+                            
                             <fieldset id="fieldset_aval">
                                 <legend>Avalie nosso site: </legend>
-                                <p>
-                                    <input type="radio" class="radiobutton" name="input_aval" id="c_ruim"> Ruim
-
-                                    <input type="radio" class="radiobutton" name="input_aval" id="c_medio">Médio
-
-                                    <input type="radio" class="radiobutton" name="input_aval" id="c_bom">Bom
-                                </p>
-                            </fieldset>                
-                            <input type="submit" id="submitbutton" value="Enviar"/>
+                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_ruim"> Ruim
+                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_medio">Médio
+                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_bom">Bom              
+                            </fieldset>
+                            <input type="submit" id="submit-contato" class="item-form submit" value="Enviar"/>
                         </form>
-                    </div>
                     <img src="img/contato_img.png" alt="" class="img-contato">                    
                 </div>
                 <button class="voltar" onclick="location.href='#sobre'">topo</button>
             </div>
-        </div>
+        </section>
 
-
-
-
-
-
-    </div>
+        <section class="apresentacao">
+            <div class="cont-externo">
+                <h2>Desenvolvido por André Sizer, Bibiana Klein e Fábio Wood</h2>
+                <h3>Para a disciplina de CPW1 no 1º semestre de 2023</h3>
+                <h3>Todos os direitos reservados®</h3>
+            </div>
+        </section>
 
     <script src="js/script.js"></script>
 </body>

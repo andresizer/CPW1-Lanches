@@ -1,0 +1,12 @@
+hr {
+    margin:0;
+}
+
+.rodape {
+    background-color: var(--branco);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    display: flex;
+}
