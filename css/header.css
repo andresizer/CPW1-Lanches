@@ -56,10 +56,8 @@
     color: #ffffff;
 }
 
-
 .titulo-pagina {
-    background: linear-gradient(rgba(250,185,0,255), rgba(241,155,0,255), rgba(248,178,0,255)) ;
-    position: fixed;
+    display: none;
     top: 10rem;   
     left: 0;
     padding: 1rem;
@@ -70,11 +68,8 @@
     text-transform: uppercase;
     border-top: #ffffff solid 2px;
     transform: translateY(4px);
-}
-
-.titulo-pagina h2 {
-    font-size: 2rem;
-    color: #ffffff;
+    background: linear-gradient(rgba(250,185,0,255), rgba(241,155,0,255), rgba(248,178,0,255)) ;
+    position: fixed;
 }
 
 @media screen and (max-width: 768px) {
@@ -104,6 +99,15 @@
 
     .menu a{
         font-size: 1.5rem;
+    }
+    
+    .titulo-pagina {
+    display: block;
+    }
+
+    .titulo-pagina h2 {
+        font-size: 2rem;
+        color: #ffffff;
     }
 
 }
