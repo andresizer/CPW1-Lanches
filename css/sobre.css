@@ -39,10 +39,14 @@ p {
     white-space:pre-wrap;
 }
 
-@media (max-width: 768) {
-    .cont-externo{
-        top: 10rem;
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .cont-externo {
+        width: 90%;
     }
+
+    .cont-invertido {
+        flex-direction: column-reverse;
+    }
+
 
 }

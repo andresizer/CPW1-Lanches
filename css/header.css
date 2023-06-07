@@ -57,7 +57,27 @@
 }
 
 
-@media (max-width: 768px) {
+.titulo-pagina {
+    background: linear-gradient(rgba(250,185,0,255), rgba(241,155,0,255), rgba(248,178,0,255)) ;
+    position: fixed;
+    top: 10rem;   
+    left: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 2.5rem;    
+    z-index: 5;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: #ffffff solid 2px;
+    transform: translateY(4px);
+}
+
+.titulo-pagina h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
     .itopo {
         display: none;
     }
@@ -85,4 +105,5 @@
     .menu a{
         font-size: 1.5rem;
     }
+
 }

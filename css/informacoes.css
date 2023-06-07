@@ -1,10 +1,10 @@
 .cont-itens2 {
     position: relative;
     display: flex;
-    margin-left: 0%;
     flex-direction: column;
-    margin-left: 5px;
-    width: 29%;   
+    padding: 1rem;
+    align-items: center;
+   
 }
 
 .info-sec {
@@ -12,34 +12,10 @@
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(250,185,0,255);
-    border-radius: 10px;
-    margin: 5px;
+    border-radius: 1rem;
+    margin: 1rem;
     align-items: center;
     justify-content: center;
-    max-height: fit-content;
-}
-
-.imgItensifood {
-    position: relative;
-    display: flex;
-    width: 10rem;
-    margin: 1rem;
-}
-
-.imgItensze {
-    position: relative;
-    display: flex;
-    width: 10rem;
-    margin: 1rem;
-    aspect-ratio: 4 / 3;
-}
-
-.imgItensmoto{
-    position: relative;
-    display: flex;
-    width: 10rem;
-    margin: 1rem;
-    aspect-ratio: 4 / 3;
 }
 
 .descItensinfo {
@@ -59,7 +35,7 @@
     display: none;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .imgItens1 {
         display: none;
     }
