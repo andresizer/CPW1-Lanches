@@ -24,7 +24,7 @@
     aspect-ratio: 4 / 3;
     width: 10rem;
     margin: 1rem;
-    
+    cursor: none;
 }
 
 .aspct {
@@ -33,7 +33,6 @@
 
 .scale {
     transform: scale(1.4);
-    cursor: none;
 }
 
 .imgRadius {
