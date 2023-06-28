@@ -50,3 +50,74 @@
     transform: scale(1.2);
     cursor: none;
 }
+
+.itens-list {
+    position: relative;
+    display: block;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    border: 2px solid black; /*borda so para fins de visualizacao, dps retirar*/
+}
+
+.card-item {
+    position: relative;
+    display: flex;
+    height: 23rem;
+    width: 11rem;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    float: left;
+}
+
+.card-item-peq {
+    position: relative;
+    display: flex;
+    height: 18rem;
+    width: 11rem;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    float: left;
+}
+
+.card-img {
+    position: relative;
+    display: flex;
+    aspect-ratio: 4 / 3;
+    width: 10rem;
+    margin: 1rem;
+    margin: 5%;
+    border-radius: 10%;
+}
+
+.card-img-bebida {
+    position: relative;
+    display: flex;
+    aspect-ratio: 4 / 4;
+    width: 10rem;
+    margin: 1rem;
+    margin: 5%;
+    border-radius: 10%;
+}
+
+/*
+.card-desc {
+    position: relative;
+    display: flex;
+    height: 15rem;
+    width: 80%;
+    border: 2px solid red;
+    margin: 5%;
+}
+*/
+
+.card-title {
+    margin: 1rem;
+}
+
+.card-text {
+    margin: 5px;
+    margin-left: 20px;
+}

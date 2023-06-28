@@ -70,49 +70,269 @@
         <section id="cardapio">
             <div class="cont-externo">
                 <h1>Cardápio</h1>
+                <!-- MINI MENU LANCHES -->
                 <h2>Lanches</h2>
                 <div class="itens-sec">
                     
-                        <div class="cont-itens">
+                        <div class="cont-itens" id="cont-itens-xis">
                             <img src="./img/xissalada.jpg" alt="" class="imgItens imgRadius">
                             <div class="descItens">Xis</div>
                         </div>
-                        <div class="cont-itens">
+                        <div class="cont-itens" id="cont-itens-bauru">
                             <img src="./img/bauru.png" alt="" class="imgItens imgRadius">
                             <div class="descItens">Baurus
                             </div>
                         </div>
-                        <div class="cont-itens">
+                        <div class="cont-itens" id="cont-itens-burger">
                             <img src="./img/burguerbacon.jpg" alt="" class="imgItens imgRadius">
                             <div class="descItens">Hambúrguers</div>
                         </div>
-                        <div class="cont-itens">
+                        <div class="cont-itens" id="cont-itens-porcoes">
                             <img src="./img/aipim.jpg" alt="" class="imgItens imgRadius">
                             <div class="descItens">Porções</div>
                         </div>
                       
-                </div>
+                </div>                
+                <!-- MINI MENU BEBIDAS -->
                 <h2>Bebidas</h2>
                 <div class="itens-sec">
-                        <div class="cont-itens">
+
+                        <div class="cont-itens" id="cont-itens-refri">
                             <img src="./img/fruki.png" alt="" class="imgItens aspct imgRadius">
                             <div class="descItens">Refrigerante</div>
                         </div>
-                        <div class="cont-itens">
+                        <div class="cont-itens" id="cont-itens-suco">
                             <img src="./img/suco.jpeg" alt="" class="imgItens aspct imgRadius">
                             <div class="descItens">Suco Natural</div>
                         </div>
-                        <div class="cont-itens">
+                        <div class="cont-itens" id="cont-itens-cerveja">
                             <img src="./img/original.jpeg" alt="" class="imgItens aspct imgRadius">
                             <div class="descItens">Cerveja</div>
                         </div>
-                        <div class="cont-itens">
+                        <div class="cont-itens" id="cont-itens-drink">
                             <img src="./img/drink.png" alt="" class="imgItens aspct imgRadius">
                             <div class="descItens">Drink</div>
                         </div>
                 </div>
+
+                <!-- MENUS DETALHADOS -->
+                <div id="xis-area">
+                    <h2>Xis</h2>
+                </div>                
+                <div class="itens-sec">
+                    
+                        <div class="card-item">
+                            <img src="img/xissalada.jpg" alt="" class="card-img">
+                                <div class="card-title"><h2>Xis salada</h2></div>
+                                <div class="card-text">R$20,00</div>
+                                <div class="card-text">Ingredientes: pão de xis, hambúrguer, tomate, alface, 
+                                    queijo muçarela e molho da casa</div>                            
+                            
+                        </div>
+                        <div class="card-item">
+                            <img src="img/xis/xis-coracao.jpeg" alt="" class="card-img">
+                            <div class="card-title"><h2>Xis coração</h2></div>
+                            <div class="card-text">R$25,00</div>
+                            <div class="card-text">Ingredientes: pão de xis, coração, tomate, alface, milho, 
+                                    queijo muçarela e molho da casa</div>   
+                        </div>
+                        <div class="card-item">
+                            <img src="img/xis/xis-vegano.jpeg" alt="" class="card-img">
+                            <div class="card-title"><h2>Xis vegano</h2></div>
+                            <div class="card-text">R$25,00</div>
+                            <div class="card-text">Ingredientes: pão de xis, hambúrguer de soja, tomate, alface, milho, 
+                                    tofu e molho da casa</div> 
+                        </div>
+                </div>
+
+                <div id="bauru-area">
+                    <h2>Baurus</h2>
+                </div>                
+                <div class="itens-sec">
+                    
+                        <div class="card-item">
+                            <img src="img/baurus/bauru-tradicional.jpg" alt="" class="card-img">
+                                <div class="card-title"><h2>Bauru tradicional</h2></div>
+                                <div class="card-text">R$20,00</div>
+                                <div class="card-text">Ingredientes: pão de bauru, filé, tomate, alface, 
+                                    queijo muçarela e molho da casa</div>                            
+                            
+                        </div>
+                        <div class="card-item">
+                            <img src="img/baurus/bauru-4-queijos.jpg" alt="" class="card-img">
+                            <div class="card-title"><h2>Bauru 4 queijos</h2></div>
+                            <div class="card-text">R$25,00</div>
+                            <div class="card-text">Ingredientes: pão de bauru, filé, tomate, alface, 
+                                    queijo muçarela, queijo cheddar, queijo provolone e queijo lanche</div>   
+                        </div>
+                        <div class="card-item">
+                            <img src="img/baurus/bauru-vegano.jpg" alt="" class="card-img">
+                            <div class="card-title"><h2>Bauru vegano</h2></div>
+                            <div class="card-text">R$25,00</div>
+                            <div class="card-text">Ingredientes: pão de bauru, hambúrguer de soja, tomate, alface, 
+                                    tofu e molho da casa</div> 
+                        </div>
+                </div>
+
+                <div id="burger-area">
+                    <h2>Hambúrgueres</h2>
+                </div>                
+                <div class="itens-sec">
+                    
+                        <div class="card-item">
+                            <img src="img/burgers/burger-tradicional.jpg" alt="" class="card-img">
+                                <div class="card-title"><h2>Hambúrguer tradicional</h2></div>
+                                <div class="card-text">R$20,00</div>
+                                <div class="card-text">Ingredientes: pão de hambúrguer, hambúrguer bovino, tomate, alface, 
+                                    queijo muçarela e molho da casa</div>                            
+                            
+                        </div>
+                        <div class="card-item">
+                            <img src="img/burgers/burger-bacon.webp" alt="" class="card-img">
+                            <div class="card-title"><h2>Hambúrguer com bacon</h2></div>
+                            <div class="card-text">R$25,00</div>
+                            <div class="card-text">Ingredientes: pão de hambúrguer, hambúrguer bovino, bacon, tomate, alface, 
+                                queijo muçarela e molho da casa</div>   
+                        </div>
+                        <div class="card-item">
+                            <img src="img/burgers/burger-vegano.jpg" alt="" class="card-img">
+                            <div class="card-title"><h2>Hambúrguer vegano</h2></div>
+                            <div class="card-text">R$25,00</div>
+                            <div class="card-text">Ingredientes: pão de hambúrguer, hambúrguer de soja, tomate, alface, 
+                                    tofu e molho da casa</div> 
+                        </div>
+                </div>
+                <div id="porcoes-area">
+                    <h2>Porções</h2>
+                </div>                
+                <div class="itens-sec">
+                    
+                        <div class="card-item-peq">
+                            <img src="img/porcoes/porcao-batata.jpg" alt="" class="card-img">
+                                <div class="card-title"><h2>Porção de batata</h2></div>
+                                <div class="card-text">R$20,00</div>   
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/porcoes/porcao-aipim.webp" alt="" class="card-img">
+                            <div class="card-title"><h2>Porção de aipim</h2></div>
+                            <div class="card-text">R$25,00</div> 
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/porcoes/porcao-polenta.jpg" alt="" class="card-img">
+                            <div class="card-title"><h2>Porção de polenta</h2></div>
+                            <div class="card-text">R$25,00</div>
+                        </div>
+                </div>
+
+                <div id="refri-area">
+                    <h2>Refrigerantes</h2>
+                </div>                
+                <div class="itens-sec">
+                    
+                        <div class="card-item-peq">
+                            <img src="img/refris/coca.webp" alt="" class="card-img-bebida">
+                                <div class="card-title"><h2>Coca-cola</h2></div>
+                                <div class="card-text">R$8,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/refris/pepsi.webp" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Pepsi</h2></div>
+                            <div class="card-text">R$6,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/refris/guarana.jpg" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Guaraná Antartica</h2></div>
+                            <div class="card-text">R$8,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/refris/fanta.jpeg" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Fanta laranja</h2></div>
+                            <div class="card-text">R$8,00</div>
+                        </div>
+                </div>
+
+                <div id="suco-area">
+                    <h2>Sucos naturais</h2>
+                </div>                
+                <div class="itens-sec">
+                    
+                        <div class="card-item-peq">
+                            <img src="img/sucos/suco-laranja.jpg" alt="" class="card-img-bebida">
+                                <div class="card-title"><h2>Laranja</h2></div>
+                                <div class="card-text">R$8,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/sucos/suco-abacaxi.jpg" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Abacaxi</h2></div>
+                            <div class="card-text">R$6,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/sucos/suco-uva.webp" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Uva</h2></div>
+                            <div class="card-text">R$8,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/sucos/suco-limao.jpg" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Limonada</h2></div>
+                            <div class="card-text">R$8,00</div>
+                        </div>
+                </div>
+
+                <div id="cerveja-area">
+                    <h2>Cervejas</h2>
+                </div>                
+                <div class="itens-sec">
+                    
+                        <div class="card-item-peq">
+                            <img src="img/original.jpeg" alt="" class="card-img-bebida">
+                                <div class="card-title"><h2>Original</h2></div>
+                                <div class="card-text">R$8,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/cervejas/heineken.png" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Heineken</h2></div>
+                            <div class="card-text">R$6,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/cervejas/caracu.jpg" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Caracu</h2></div>
+                            <div class="card-text">R$8,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/cervejas/dado.webp" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Dado Lager</h2></div>
+                            <div class="card-text">R$8,00</div>
+                        </div>
+                </div>
+
+                <div id="drink-area">
+                    <h2>Drinks</h2>
+                </div>                
+                <div class="itens-sec">
+                    
+                        <div class="card-item-peq">
+                            <img src="img/drinks/caipira-limao.jpg" alt="" class="card-img-bebida">
+                                <div class="card-title"><h2>Caipirinha limão (cachaça)</h2></div>
+                                <div class="card-text">R$18,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/drinks/caipira-morango.jpg" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Caipirinha morango (cachaça)</h2></div>
+                            <div class="card-text">R$18,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/drinks/caipira-limao.jpg" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Caipirinha limão (vodka)</h2></div>
+                            <div class="card-text">R$17,00</div>
+                        </div>
+                        <div class="card-item-peq">
+                            <img src="img/drinks/caipira-morango.jpg" alt="" class="card-img-bebida">
+                            <div class="card-title"><h2>Caipirinha morango (vodka)</h2></div>
+                            <div class="card-text">R$17,00</div>
+                        </div>
+                </div>
                 <button class="voltar" onclick="location.href='#sobre'">topo</button>
-            </div>
+            </div>            
         </section>
         <!-- CONTAINER INFORMAÇÃO -->
         <section id="informacao">
