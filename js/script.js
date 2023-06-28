@@ -15,25 +15,6 @@ let targetDivCervejas = document.getElementById('cerveja-area');
 let scrollToDivDrinks = document.getElementById('cont-itens-drink');
 let targetDivDrinks = document.getElementById('drink-area');
 
-// mudar mascote
-
-let img = "img/mascot_images/mascote_sobre.png";
-let shown_img = document.getElementById("mascote");
-
-function change_mascot_click (src) {
-    img = src;
-    shown_img.src = img;
-}
-
-function change_mascot_on (src) {
-    shown_img.src = src;
-}
-
-function change_mascot_out () {
-    shown_img.src = img;
-}
-
-
 // --------------------------------------------------------------------------
 // funcao para rolar a tela no cardapio considerando a area do logo no topo
 
@@ -342,3 +323,30 @@ scrollToDivDrinks.addEventListener('click', () => {
   // });
   
 });
+
+// --------------------------------------------------------------------------
+// funcoes para mudar mascote
+
+let img = "img/mascot_images/mascote_sobre.png";
+let shown_img = document.getElementById("mascote");
+
+function change_mascot_click (src) {
+    img = src;
+    shown_img.src = img;
+}
+
+function change_mascot_on (src) {
+    shown_img.src = src;
+}
+
+function change_mascot_out () {
+    shown_img.src = img;
+}
+
+// --------------------------------------------------------------------------
+// funcao para o botao "topo", que sobre para o topo e muda o mascote
+
+function top_button_func () {
+  change_mascot_click ("img/mascot_images/mascote_sobre.png");
+  location.href='#sobre';
+}
