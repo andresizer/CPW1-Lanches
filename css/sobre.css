@@ -1,0 +1,52 @@
+
+.cont-externo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto; 
+    top: 14rem;
+    background-color: white;
+    padding: 20px;
+    max-width: 1440px; 
+}
+
+.cont-int {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(250,185,0,255);
+    border-radius: 10px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content;
+}
+
+.textoSobre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+p {
+    max-width: 30rem;
+    overflow:hidden;
+    text-overflow:clip;
+    white-space:pre-wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .cont-externo {
+        width: 90%;
+    }
+
+    .cont-invertido {
+        flex-direction: column-reverse;
+    }
+
+
+}

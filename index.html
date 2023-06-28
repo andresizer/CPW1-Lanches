@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPW1 Lanches</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- CONTAINER COM TODO O CONTEUDO -->
-    <div class="site">
         <!-- CONTAINER DO BANNER + MENU DO TOPO -->
-        <div class="topo">
-            <img src="img/banner-amarelo1.png" alt="" class="itopo">
-            <img src="img/mascot_images/mascote_sobre.png" alt="" class="mascote" id="mascote">            
-            
+        <header class="topo" id="logo">
+            <div class="imagens-topo">
+                <img src="img/banner-amarelo1.png" alt="" class="itopo">
+                <img src="img/mascot_images/mascote_sobre.png" alt="" class="mascote" id="mascote"> 
+            </div>
+
             <div class="menu">
                 <a href="#sobre" class="mtopo mhome" onmouseover="change_mascot_on('img/mascot_images/mascote_sobre.png')"
                                                      onmouseout="change_mascot_out()"
@@ -36,97 +36,340 @@
                                                      onmouseout="change_mascot_out()"
                                                      onclick="change_mascot_click('img/mascot_images/mascote_contato.png')">contato</a>
             </div>
-            
+
+        </header>
+        <div class="titulo-pagina">
+            <h2>CPW1 Lanches</h2>
         </div>
-        
         <!-- CONTAINER INICIAL -->
-        <div id="sobre">
+        <section id="sobre">          
             <div class="cont-externo">
                 <h1>Sobre</h1>
                 <div class="cont-int">
-                    <img src="./img/cozinha.jpg" alt="" class="imgItens">
+                    <img src="./img/cozinha.jpg" alt="" class="imgItens imgRadius">
                     <div class="textoSobre">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quam, nemo odio animi, incidunt natus placeat mollitia enim excepturi nihil quibusdam non perferendis officiis autem maxime minus, ab dolore saepe. Esse, officiis accusamus dolore cum ab exercitationem aut quo similique eveniet itaque. Molestias in libero deleniti, tempora autem perferendis sint.</p>
                     </div>
+                </div>
+                <div class="cont-int cont-invertido">
+                    <div class="textoSobre">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quam, nemo odio animi, incidunt natus placeat mollitia enim excepturi nihil quibusdam non perferendis officiis autem maxime minus, ab dolore saepe. Esse, officiis accusamus dolore cum ab exercitationem aut quo similique eveniet itaque. Molestias in libero deleniti, tempora autem perferendis sint.</p>
+                    </div>
+                    <img src="./img/amigos.jpeg" alt="" class="imgItens imgRadius">
                 </div>
                 <div class="cont-int">
+                    <img src="./img/comida.jpeg" alt="" class="imgItens imgRadius">
                     <div class="textoSobre">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quam, nemo odio animi, incidunt natus placeat mollitia enim excepturi nihil quibusdam non perferendis officiis autem maxime minus, ab dolore saepe. Esse, officiis accusamus dolore cum ab exercitationem aut quo similique eveniet itaque. Molestias in libero deleniti, tempora autem perferendis sint.</p>
                     </div>
-                    <img src="./img/amigos.jpeg" alt="" class="imgItens">
-                </div>
-                <div class="cont-int">
-                    <img src="./img/comida.jpeg" alt="" class="imgItens">
-                    <div class="textoSobre">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quam, nemo odio animi, incidunt natus placeat mollitia enim excepturi nihil quibusdam non perferendis officiis autem maxime minus, ab dolore saepe. Esse, officiis accusamus dolore cum ab exercitationem aut quo similique eveniet itaque. Molestias in libero deleniti, tempora autem perferendis sint.</p>
-                    </div>
-                </div>
-                
+                </div> 
             </div>
-        </div>
+        </section>
 
         <!-- CONTAINER CARDÁPIO -->
-        <div id="cardapio">
+        <section id="cardapio">
             <div class="cont-externo">
                 <h1>Cardápio</h1>
-                <h2>Lanches</h2>
+                <!-- MINI MENU LANCHES -->
+                <div class="descItens aumentaFonte">Lanches</div>
                 <div class="itens-sec">
-                    
-                        <div class="cont-itens">
-                            <img src="./img/xissalada.jpg" alt="" class="imgItens">
-                            <div class="descItens">Xis</div>
+                    <div class="cont-itens" id="cont-itens-xis">
+                        <a href="#xis-area">
+                            <img src="./img/xissalada.jpg" alt="" class="imgItens imgRadius">
+                            <div class="descItens aumentaFonte">Xis</div>
+                        </a>
+                    </div>
+                    <div class="cont-itens" id="cont-itens-bauru">
+                        <a href="#bauru-area">
+                            <img src="./img/bauru.png" alt="" class="imgItens imgRadius">
+                            <div class="descItens aumentaFonte">Baurus</div>
+                        </a>
+                    </div>
+                    <div class="cont-itens" id="cont-itens-burger">
+                        <a href="#burger-area">
+                            <img src="./img/burguerbacon.jpg" alt="" class="imgItens imgRadius">
+                            <div class="descItens aumentaFonte">Hambúrguers</div>
+                        </a>
+                    </div>
+                    <div class="cont-itens" id="cont-itens-porcoes">
+                        <a href="#porcoes-area">
+                            <img src="./img/aipim.jpg" alt="" class="imgItens imgRadius">
+                            <div class="descItens aumentaFonte">Porções</div>
+                        </a>
+                    </div>    
+                </div>    
+                        
+                <!-- MINI MENU BEBIDAS -->
+                <div class="descItens aumentaFonte">Bebidas</div>
+                <div class="itens-sec">
+                        <div class="cont-itens" id="cont-itens-refri">
+                            <a href="#refri-area">
+                                <img src="./img/fruki.png" alt="" class="imgItens aspct imgRadius">
+                                <div class="descItens aumentaFonte">Refrigerante</div>
+                            </a>
                         </div>
-                        <div class="cont-itens">
-                            <img src="./img/bauru.png" alt="" class="imgItens">
-                            <div class="descItens">Baurus
+                        <div class="cont-itens" id="cont-itens-suco">
+                            <a href="#suco-area">
+                                <img src="./img/suco.jpeg" alt="" class="imgItens aspct imgRadius">
+                                <div class="descItens aumentaFonte">Suco Natural</div>
+                            </a>
+                        </div>
+                        <div class="cont-itens" id="cont-itens-cerveja">
+                            <a href="#cerveja-area">
+                                <img src="./img/original.jpeg" alt="" class="imgItens aspct imgRadius">
+                                <div class="descItens aumentaFonte">Cerveja</div>
+                            </a>    
+                        </div>
+                        <div class="cont-itens" id="cont-itens-drink">
+                            <a href="#drink-area">
+                                <img src="./img/drink.png" alt="" class="imgItens aspct imgRadius">
+                                <div class="descItens aumentaFonte">Drink</div>
+                            </a>
+                        </div>
+                </div>
+            <button class="voltar" onclick="top_button_func()" >topo</button>
+            </div>
+                
+                <!-- MENUS DETALHADOS -->
+                <section id="xis-area" class="itensCardapioInv">
+                    <div class="cont-externo">
+                        <div class="descItens aumentaFonte">Xis</div>        
+                        <div class="itens-sec">
+                            <div class="cont-itens">
+                                <img src="img/xissalada.jpg" alt="" class="imgItens">
+                                    <div class="descItens aumentaFonte">Xis salada</div>
+                                    <div class="descItens aumentaFonte">R$20,00</div>
+                                    <div class="descItens descItensParag">Ingredientes: pão de xis, hambúrguer, tomate, alface, queijo muçarela e molho da casa</div>                              
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/xis/xis-coracao.jpeg" alt="" class="imgItens">
+                                <div class="descItens aumentaFonte">Xis coração</div>
+                                <div class="descItens aumentaFonte">R$25,00</div>
+                                <div class="descItens descItensParag">Ingredientes: pão de xis, coração, tomate, alface, milho, queijo muçarela e molho da casa</div>   
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/xis/xis-vegano.jpeg" alt="" class="imgItens">
+                                <div class="descItens aumentaFonte">Xis vegano</div>
+                                <div class="descItens aumentaFonte">R$25,00</div>
+                                <div class="descItens descItensParag">Ingredientes: pão de xis, hambúrguer de soja, tomate, alface, milho, tofu e molho da casa</div> 
                             </div>
                         </div>
-                        <div class="cont-itens">
-                            <img src="./img/burguerbacon.jpg" alt="" class="imgItens">
-                            <div class="descItens">Hambúrguers</div>
+                        <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
+                    </div>
+                </section>
+
+                <section id="bauru-area" class="itensCardapioInv">
+                    <div class="cont-externo">
+                        <div class="descItens aumentaFonte">Baurus</div>          
+                        <div class="itens-sec">
+                            <div class="cont-itens">
+                                <img src="img/baurus/bauru-tradicional.jpg" alt="" class="imgItens">
+                                    <div class="descItens aumentaFonte">Bauru tradicional</div>
+                                    <div class="descItens aumentaFonte">R$20,00</div>
+                                    <div class="descItens descItensParag">Ingredientes: pão de bauru, filé, tomate, alface, queijo muçarela e molho da casa</div>                           
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/baurus/bauru-4-queijos.jpg" alt="" class="imgItens">
+                                <div class="descItens aumentaFonte">Bauru 4 queijos</div>
+                                <div class="descItens aumentaFonte">R$25,00</div>
+                                <div class="descItens descItensParag">Ingredientes: pão de bauru, filé, tomate, alface, queijo muçarela, queijo cheddar, queijo provolone e queijo lanche</div>   
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/baurus/bauru-vegano.jpg" alt="" class="imgItens">
+                                <div class="descItens aumentaFonte"><h2>Bauru vegano</h2></div>
+                                <div class="descItens aumentaFonte">R$25,00</div>
+                                <div class="descItens descItensParag">Ingredientes: pão de bauru, hambúrguer de soja, tomate, alface, tofu e molho da casa</div> 
+                            </div>
                         </div>
-                        <div class="cont-itens">
-                            <img src="./img/aipim.jpg" alt="" class="imgItens">
-                            <div class="descItens">Porções</div>
+                        <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
+                    </div>
+                </section>  
+                
+                <section id="burger-area" class="itensCardapioInv">
+                    <div class="cont-externo">
+                        <div class="descItens aumentaFonte">Hambúrgueres</div>             
+                        <div class="itens-sec">
+                            <div class="cont-itens">
+                                <img src="img/burgers/burger-tradicional.jpg" alt="" class="imgItens">
+                                    <div class="descItens aumentaFonte">Burguer tradicional</div>
+                                    <div class="descItens aumentaFonte">R$20,00</div>
+                                    <div class="descItens descItensParag">Ingredientes: pão de hambúrguer, hambúrguer bovino, tomate, alface, 
+                                        queijo muçarela e molho da casa</div>                              
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/burgers/burger-bacon.webp" alt="" class="imgItens">
+                                <div class="descItens aumentaFonte">Burguer com bacon</div>
+                                <div class="descItens aumentaFonte">R$25,00</div>
+                                <div class="descItens descItensParag">Ingredientes: pão de hambúrguer, hambúrguer bovino, bacon, tomate, alface, 
+                                    queijo muçarela e molho da casa</div>   
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/burgers/burger-vegano.jpg" alt="" class="imgItens">
+                                <div class="descItens aumentaFonte">Burguer vegano</div>
+                                <div class="descItens aumentaFonte">R$25,00</div>
+                                <div class="descItens descItensParag">Ingredientes: pão de hambúrguer, hambúrguer de soja, tomate, alface, 
+                                        tofu e molho da casa</div> 
+                            </div>
                         </div>
-                      
-                </div>
-                <h2>Bebidas</h2>
-                <div class="itens-sec">
-                        <div class="cont-itens">
-                            <img src="./img/fruki.png" alt="" class="imgItens aspct">
-                            <div class="descItens">Refrigerante</div>
+                        <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
+                    </div>
+                </section>
+                
+                <section id="porcoes-area" class="itensCardapioInv">
+                    <div class="cont-externo">
+                        <div class="descItens aumentaFonte">Porções</div>           
+                        <div class="itens-sec">
+                            <div class="cont-itens">
+                                <img src="img/porcoes/porcao-batata.jpg" alt="" class="imgItens aspct">
+                                    <div class="descItens aumentaFonte">Porção de batata</div>
+                                    <div class="descItens aumentaFonte">R$20,00</div>   
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/porcoes/porcao-aipim.webp" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Porção de aipim</div>
+                                <div class="descItens aumentaFonte">R$25,00</div> 
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/porcoes/porcao-polenta.jpg" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Porção de polenta</div>
+                                <div class="descItens aumentaFonte">R$25,00</div>
+                            </div>
                         </div>
-                        <div class="cont-itens">
-                            <img src="./img/suco.jpeg" alt="" class="imgItens aspct">
-                            <div class="descItens">Suco Natural</div>
+                        <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
+                    </div>
+                </section> 
+               
+                <section id="refri-area" class="itensCardapioInv">
+                    <div class="cont-externo">
+                        <div class="descItens aumentaFonte">Refrigerantes</div>          
+                        <div class="itens-sec">
+                            <div class="cont-itens">
+                                <img src="img/refris/coca.webp" alt="" class="imgItens aspct">
+                                    <div class="descItens aumentaFonte">Coca-cola</div>
+                                    <div class="descItens aumentaFonte">R$8,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/refris/pepsi.webp" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Pepsi</div>
+                                <div class="descItens aumentaFonte">R$6,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/refris/guarana.jpg" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Guaraná Antartica</div>
+                                <div class="descItens aumentaFonte">R$8,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/refris/fanta.jpeg" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Fanta laranja</div>
+                                <div class="descItens aumentaFonte">R$8,00</div>
+                            </div>
                         </div>
-                        <div class="cont-itens">
-                            <img src="./img/original.jpeg" alt="" class="imgItens aspct">
-                            <div class="descItens">Cerveja</div>
+                        <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
+                    </div>
+                </section> 
+                
+                <section id="suco-area" class="itensCardapioInv">
+                    <div class="cont-externo">
+                        <div class="descItens aumentaFonte">Sucos</div>          
+                        <div class="itens-sec">
+                            <div class="cont-itens">
+                                <img src="img/sucos/suco-laranja.jpg" alt="" class="imgItens aspct">
+                                    <div class="descItens aumentaFonte">Laranja</div>
+                                    <div class="descItens aumentaFonte">R$8,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/sucos/suco-abacaxi.jpg" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Abacaxi</div>
+                                <div class="descItens aumentaFonte">R$6,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/sucos/suco-uva.webp" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Uva</div>
+                                <div class="descItens aumentaFonte">R$8,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/sucos/suco-limao.jpg" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Limonada</div>
+                                <div class="descItens aumentaFonte">R$8,00</div>
+                            </div>
                         </div>
-                        <div class="cont-itens">
-                            <img src="./img/drink.png" alt="" class="imgItens aspct">
-                            <div class="descItens">Drink</div>
+                        <button class="voltar" onclick="top_button_func()">voltar</button>
+                    </div>
+                </section> 
+                
+                <section id="cerveja-area" class="itensCardapioInv">
+                    <div class="cont-externo">
+                        <div class="descItens aumentaFonte">Cervejas</div>              
+                        <div class="itens-sec">
+                            <div class="cont-itens">
+                                <img src="img/original.jpeg" alt="" class="imgItens aspct">
+                                    <div class="descItens aumentaFonte">Original</div>
+                                    <div class="descItens aumentaFonte">R$16,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/cervejas/heineken.png" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Heineken</div>
+                                <div class="descItens aumentaFonte">R$16,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/cervejas/caracu.jpg" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Caracu</div>
+                                <div class="descItens aumentaFonte">R$8,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/cervejas/dado.webp" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Dado Lager</div>
+                                <div class="descItens aumentaFonte">R$8,00</div>
+                            </div>
                         </div>
-                </div>
-                <button class="voltar" onclick="location.href='#sobre'">topo</button>
-            </div>
-        </div>
+                        <button class="voltar" onclick="top_button_func()">voltar</button>
+                    </div>
+                </section>
+               
+                <section id="drink-area" class="itensCardapioInv">
+                    <div class="cont-externo">
+                        <div class="descItens aumentaFonte">Drinks</div>              
+                        <div class="itens-sec">
+                            <div class="cont-itens">
+                                <img src="img/drinks/caipira-limao.jpg" alt="" class="imgItens aspct">
+                                    <div class="descItens aumentaFonte">Caipira limão</div>
+                                    <div class="descItens aumentaFonte">R$18,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/drinks/caipira-morango.jpg" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Caipira morango</div>
+                                <div class="descItens aumentaFonte">R$18,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/drinks/Moscow.jpeg" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Moscow Mule</div>
+                                <div class="descItens aumentaFonte">R$28,00</div>
+                            </div>
+                            <div class="cont-itens">
+                                <img src="img/drinks/GinTonica.jpeg" alt="" class="imgItens aspct">
+                                <div class="descItens aumentaFonte">Gin Tônica</div>
+                                <div class="descItens aumentaFonte">R$28,00</div>
+                            </div>
+                        </div>
+                        <button class="voltar" onclick="top_button_func()">voltar</button>
+                    </div> 
+                </section>
+                
+        </section>
         <!-- CONTAINER INFORMAÇÃO -->
-        <div id="informacao">
+        <section id="informacao">
             <div class="cont-externo">
                 <h1>Informações</h1>
                 <h2>Como pedir delivery</h2>
                 <div class="info-sec">
                         <div class="cont-itens">
-                            <img src="./img/ifood.png" alt="" class="imgItensifood">
+                            <img src="./img/ifood.png" alt="" class="imgItens aspct">
                         </div>
                         <div class="cont-itens">
-                            <img src="./img/zedelivery.png" alt="" class="imgItensze">   
+                            <img src="./img/zedelivery.png" alt="" class="imgItens aspct scale">   
                         </div>
                         <div class="cont-itens">
-                            <img src="./img/delivery-motoboy.png" alt="" class="imgItensmoto"> 
+                            <img src="./img/delivery-motoboy.png" alt="" class="imgItens "> 
                         </div>
                       
                 </div>
@@ -149,6 +392,11 @@
                 <div class="info-sec">
                     <div class="cont-itens">
                         <img src="./img/safra-removebg-preview.png" alt="" class="imgItens1">
+                        <ul class="formas-pagamento">
+                            <li>Dinheiro</li>
+                            <li>PIX</li>
+                            <li>Cartões</li>
+                        </ul>
                     </div>
                 </div>
                 <h2>Redes Sociais</h2>
@@ -163,92 +411,76 @@
                         <img src="./img/twitter-removebg-preview.png" alt="" class="imgItens">
                     </div>
                 </div>
-                <button class="voltar" onclick="location.href='#sobre'">topo</button>
+                <button class="voltar" onclick="top_button_func()">topo</button>
             </div>
-        </div>
+        </section>
 
         <!-- CONTAINER RESERVAS -->
-        <div id="reservas">
+        <section id="reservas">
             <div class="cont-externo">                
                 <h1>Reservas</h1>  
-                <div id="cont-ext-reservas"> 
-                        <div id="reserv-form">
-                            <form method="post" id="form-reservas">
-                                <p>
-                                    <label for="input_nome">Nome: </label>
-                                    <input type="text" name="input_nome" id="c_nome" placeholder="Nome e sobrenome">
-                                </p>
-                                <p>
-                                    <label for="input_email">Email: </label>
-                                    <input type="email" name="input_email" id="c_email" placeholder="email@email.com">
-                                </p>
-                                <p>
-                                    <label for="input_numpes">Nº de pessoas: </label>
-                                    <input type="number" name="input_numpes" id="c_numpes" >
-                                </p>
-                                <p>
-                                    <label for="input_data">Data: </label>
-                                    <input type="date" name="input_data" id="c_data" >
-                                </p>
-                                <p>
-                                    <label for="input_horario">Horário: </label>
-                                    <input type="time" name="input_horario" id="c_horario" >
-                                </p>
-                                                
-                                <input type="submit" id="submit-reservas" value="Enviar"/>
+                <div class="cont-int"> 
+                            <form method="post" class="formulario">
+                                <label for="input_nome">Nome: </label>
+                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome">
+                                    
+                                <label for="input_email">Email: </label>   
+                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com">
+
+                                <label for="input_numpes">Nº de pessoas: </label>
+                                <input type="number" name="input_numpes" class="item-form" id="c_numpes" >
+                                    
+                                <label for="input_data">Data: </label>
+                                <input type="date" name="input_data" id="c_data" class="item-form">
+                             
+                                <label for="input_horario">Horário: </label>
+                                <input type="time" name="input_horario" class="item-form" id="c_horario" >
+                                         
+                                <input type="submit" id="submit-reservas" class="item-form" value="Enviar"/>
                             </form>
-                        </div>
                         <img src="img/reserva_img.png" alt="" class="img-reserva">                    
                     </div>
-                <button class="voltar" onclick="location.href='#sobre'">topo</button>
+                <button class="voltar" onclick="top_button_func()">topo</button>
             </div>
-        </div>
+        </section>
 
         <!-- CONTAINER CONTATO -->
-        <div id="contato">
+        <section id="contato">
             <div class="cont-externo">
                 <h1>Fale conosco</h1>
-                <div id="cont-ext-contato">
-                    <div id="cont-form">
-                        <form method="post" id="form_contatos">
-                            <p>
+                <div class="cont-int">
+                        <form method="post" class="formulario">
                                 <label for="input_nome">Nome: </label>
-                                <input type="text" name="input_nome" id="c_nome" placeholder="Nome e sobrenome">
-                            </p>
-                            <p>
+                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome">
+                           
                                 <label for="input_email">Email: </label>
-                                <input type="email" name="input_email" id="c_email" placeholder="email@email.com">
-                            </p>
-                            <p>
+                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com">
+                           
                                 <label for="input_msg">Mensagem: </label>
-                            <br/>
-                                <textarea type="text" name="input_msg" id="c_msg" cols="45" rows="3" placeholder="Escreva aqui sua mensagem!"></textarea>
-                            </p>
+                                <textarea type="text" name="input_msg" id="c_msg" cols="45" rows="3" class="item-form" placeholder="Escreva aqui sua mensagem!"></textarea>
+                            
                             <fieldset id="fieldset_aval">
                                 <legend>Avalie nosso site: </legend>
-                                <p>
-                                    <input type="radio" class="radiobutton" name="input_aval" id="c_ruim"> Ruim
-
-                                    <input type="radio" class="radiobutton" name="input_aval" id="c_medio">Médio
-
-                                    <input type="radio" class="radiobutton" name="input_aval" id="c_bom">Bom
-                                </p>
-                            </fieldset>                
-                            <input type="submit" id="submitbutton" value="Enviar"/>
+                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_ruim"> Ruim
+                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_medio">Médio
+                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_bom">Bom              
+                            </fieldset>
+                            <input type="submit" id="submit-contato" class="item-form submit" value="Enviar"/>
                         </form>
-                    </div>
                     <img src="img/contato_img.png" alt="" class="img-contato">                    
                 </div>
-                <button class="voltar" onclick="location.href='#sobre'">topo</button>
+                <button class="voltar" onclick="top_button_func()">topo</button>
             </div>
-        </div>
+        </section>
 
-
-
-
-
-
-    </div>
+        <section class="apresentacao">
+            <hr>
+            <div class="cont-externo">
+                <h2>Desenvolvido por André Sizer, Bibiana Klein e Fábio Wood</h2>
+                <h3>Para a disciplina de CPW1 no 1º semestre de 2023</h3>
+                <h3>Todos os direitos reservados®</h3>
+            </div>
+        </section>
 
     <script src="js/script.js"></script>
 </body>

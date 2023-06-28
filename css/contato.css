@@ -1,0 +1,41 @@
+
+input, textarea {
+    font-family: 'Concert One', cursive;
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+.item-form {
+    margin: 0.5rem 0; 
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.img-reserva {    
+    position: relative;
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.img-contato {    
+    position: relative;
+    width: 12rem;
+    margin: 1rem;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius:1rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 1.5rem;   
+}
+
+.formulario .submit {
+    width: 50%;
+    margin: 0.5rem auto;
+}

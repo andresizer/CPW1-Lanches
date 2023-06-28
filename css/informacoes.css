@@ -1,0 +1,49 @@
+.cont-itens2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+   
+}
+
+.info-sec {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(250,185,0,255);
+    border-radius: 1rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.descItensinfo {
+    position: relative;
+    display: flex;
+    justify-content:left;
+    font-size: 1.5rem;
+}
+
+.imgItens1 {
+    position: relative;
+    display: flex;
+    margin: 1rem;
+}
+
+.formas-pagamento {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .imgItens1 {
+        display: none;
+    }
+
+    .formas-pagamento {
+        display: flex;
+        gap: 3rem;
+        font-size: 2rem;
+    }
+
+}
