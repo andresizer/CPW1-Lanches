@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPW1 Lanches</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="/img/icon.png"/>
+    <link rel="icon" type="image/png" href="/img/icon.png">
 </head>
 <body>
         <!-- CONTAINER DO BANNER + MENU DO TOPO -->
@@ -421,21 +421,21 @@
             <div class="cont-externo">                
                 <h1>Reservas</h1>  
                 <div class="cont-int"> 
-                            <form method="post" class="formulario">
+                            <form method="post" class="formulario" action="/sucesso.html">
                                 <label for="input_nome">Nome: </label>
-                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome">
+                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome" required>
                                     
                                 <label for="input_email">Email: </label>   
-                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com">
+                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com" required>
 
                                 <label for="input_numpes">Nº de pessoas: </label>
-                                <input type="number" name="input_numpes" class="item-form" id="c_numpes" >
+                                <input type="number" name="input_numpes" class="item-form" id="c_numpes" required>
                                     
                                 <label for="input_data">Data: </label>
-                                <input type="date" name="input_data" id="c_data" class="item-form">
+                                <input type="date" name="input_data" id="c_data" class="item-form" required>
                              
                                 <label for="input_horario">Horário: </label>
-                                <input type="time" name="input_horario" class="item-form" id="c_horario" >
+                                <input type="time" name="input_horario" class="item-form" id="c_horario" required>
                                          
                                 <input type="submit" id="submit-reservas" class="item-form" value="Enviar"/>
                             </form>
@@ -450,19 +450,19 @@
             <div class="cont-externo">
                 <h1>Fale conosco</h1>
                 <div class="cont-int">
-                        <form method="post" class="formulario">
+                        <form method="post" class="formulario" action="/sucesso.html">
                                 <label for="input_nome">Nome: </label>
-                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome">
+                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome" required>
                            
                                 <label for="input_email">Email: </label>
-                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com">
+                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com" required>
                            
                                 <label for="input_msg">Mensagem: </label>
-                                <textarea type="text" name="input_msg" id="c_msg" cols="45" rows="3" class="item-form" placeholder="Escreva aqui sua mensagem!"></textarea>
+                                <textarea type="text" name="input_msg" id="c_msg" cols="45" rows="3" class="item-form" placeholder="Escreva aqui sua mensagem!"required></textarea>
                             
                             <fieldset id="fieldset_aval">
                                 <legend>Avalie nosso site: </legend>
-                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_ruim"> Ruim
+                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_ruim" required> Ruim
                                     <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_medio">Médio
                                     <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_bom">Bom              
                             </fieldset>
