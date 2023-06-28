@@ -18,99 +18,173 @@ function change_mascot_out () {
 }
 
 // --------------------------------------------------------------------------
+// funcao para rolar a tela no cardapio considerando a area do logo no topo
+
+let getOffsetTop = function (elem) {
+
+	// Set our distance placeholder
+	let distance = 0;
+
+	// Loop up the DOM
+	if (elem.offsetParent) {
+		do {
+			distance += elem.offsetTop;
+			elem = elem.offsetParent;
+		} while (elem);
+	}
+
+  let fixedDivHeight = document.getElementById('logo').offsetHeight;
+
+  distance = distance - fixedDivHeight;
+
+	// Return our distance
+	return distance < 0 ? 0 : distance;
+};
+
+// --------------------------------------------------------------------------
 // scroll cardapio
 
 // xis
 // Get references to the elements
-const scrollToDivXis = document.getElementById('cont-itens-xis');
-const targetDivXis = document.getElementById('xis-area');
+let scrollToDivXis = document.getElementById('cont-itens-xis');
+let targetDivXis = document.getElementById('xis-area');
+
+let offsetXis = getOffsetTop(targetDivXis);
 
 // Add click event listener
 scrollToDivXis.addEventListener('click', () => {
-  // Scroll to the target div
-  targetDivXis.scrollIntoView({ behavior: 'smooth' });
+
+  // targetDivXis.scrollIntoView({ behavior: 'smooth' });
+  
+  window.scrollTo({
+    top: offsetXis,
+    behavior: 'smooth'
+  });
+  
 });
 
 // --------------------------------------------------------------------------
 // baurus
 // Get references to the elements
-const scrollToDivBauru = document.getElementById('cont-itens-bauru');
-const targetDivBauru = document.getElementById('bauru-area');
+let scrollToDivBauru = document.getElementById('cont-itens-bauru');
+let targetDivBauru = document.getElementById('bauru-area');
+
+let offsetBauru = getOffsetTop(targetDivBauru);
 
 // Add click event listener
 scrollToDivBauru.addEventListener('click', () => {
-  // Scroll to the target div
-  targetDivBauru.scrollIntoView({ behavior: 'smooth' });
+  
+  window.scrollTo({
+    top: offsetBauru,
+    behavior: 'smooth'
+  });
+  
 });
 
 // --------------------------------------------------------------------------
 // burgers
 // Get references to the elements
-const scrollToDivBurger = document.getElementById('cont-itens-burger');
-const targetDivBurger = document.getElementById('burger-area');
+let scrollToDivBurger = document.getElementById('cont-itens-burger');
+let targetDivBurger = document.getElementById('burger-area');
+
+let offsetBurger = getOffsetTop(targetDivBurger);
 
 // Add click event listener
 scrollToDivBurger.addEventListener('click', () => {
-  // Scroll to the target div
-  targetDivBurger.scrollIntoView({ behavior: 'smooth' });
+  
+  window.scrollTo({
+    top: offsetBurger,
+    behavior: 'smooth'
+  });
+  
 });
 
 // --------------------------------------------------------------------------
 // porcoes
 // Get references to the elements
-const scrollToDivPorcoes = document.getElementById('cont-itens-porcoes');
-const targetDivPorcoes = document.getElementById('porcoes-area');
+let scrollToDivPorcoes = document.getElementById('cont-itens-porcoes');
+let targetDivPorcoes = document.getElementById('porcoes-area');
+
+let offsetPorcoes = getOffsetTop(targetDivPorcoes);
 
 // Add click event listener
 scrollToDivPorcoes.addEventListener('click', () => {
-  // Scroll to the target div
-  targetDivPorcoes.scrollIntoView({ behavior: 'smooth' });
+  
+  window.scrollTo({
+    top: offsetPorcoes,
+    behavior: 'smooth'
+  });
+  
 });
 
 // --------------------------------------------------------------------------
 // refris
 // Get references to the elements
-const scrollToDivRefris = document.getElementById('cont-itens-refri');
-const targetDivRefris = document.getElementById('refri-area');
+let scrollToDivRefris = document.getElementById('cont-itens-refri');
+let targetDivRefris = document.getElementById('refri-area');
+
+let offsetRefris = getOffsetTop(targetDivRefris);
 
 // Add click event listener
 scrollToDivRefris.addEventListener('click', () => {
-  // Scroll to the target div
-  targetDivRefris.scrollIntoView({ behavior: 'smooth' });
+  
+  window.scrollTo({
+    top: offsetRefris,
+    behavior: 'smooth'
+  });
+  
 });
 
 // --------------------------------------------------------------------------
 // sucos
 // Get references to the elements
-const scrollToDivSucos = document.getElementById('cont-itens-suco');
-const targetDivSucos = document.getElementById('suco-area');
+let scrollToDivSucos = document.getElementById('cont-itens-suco');
+let targetDivSucos = document.getElementById('suco-area');
+
+let offsetSucos = getOffsetTop(targetDivSucos);
 
 // Add click event listener
 scrollToDivSucos.addEventListener('click', () => {
-  // Scroll to the target div
-  targetDivSucos.scrollIntoView({ behavior: 'smooth' });
+  
+  window.scrollTo({
+    top: offsetSucos,
+    behavior: 'smooth'
+  });
+  
 });
 
 // --------------------------------------------------------------------------
 // cervejas
 // Get references to the elements
-const scrollToDivCervejas = document.getElementById('cont-itens-cerveja');
-const targetDivCervejas = document.getElementById('cerveja-area');
+let scrollToDivCervejas = document.getElementById('cont-itens-cerveja');
+let targetDivCervejas = document.getElementById('cerveja-area');
+
+let offsetCervejas = getOffsetTop(targetDivCervejas);
 
 // Add click event listener
 scrollToDivCervejas.addEventListener('click', () => {
-  // Scroll to the target div
-  targetDivCervejas.scrollIntoView({ behavior: 'smooth' });
+  
+  window.scrollTo({
+    top: offsetCervejas,
+    behavior: 'smooth'
+  });
+  
 });
 
 // --------------------------------------------------------------------------
 // drinks
 // Get references to the elements
-const scrollToDivDrinks = document.getElementById('cont-itens-drink');
-const targetDivDrinks = document.getElementById('drink-area');
+let scrollToDivDrinks = document.getElementById('cont-itens-drink');
+let targetDivDrinks = document.getElementById('drink-area');
+
+let offsetDrinks = getOffsetTop(targetDivDrinks);
 
 // Add click event listener
 scrollToDivDrinks.addEventListener('click', () => {
-  // Scroll to the target div
-  targetDivDrinks.scrollIntoView({ behavior: 'smooth' });
+  
+  window.scrollTo({
+    top: offsetDrinks,
+    behavior: 'smooth'
+  });
+  
 });
