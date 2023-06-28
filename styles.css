@@ -39,6 +39,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .voltar {
    float: right;
    border: 2px solid black;
