@@ -131,7 +131,7 @@
             </div>
                 
                 <!-- MENUS DETALHADOS -->
-                <section id="xis-area" class="itensCardapioInv">
+                <div id="xis-area" class="itensCardapioInv">
                     <div class="cont-externo">
                         <div class="descItens aumentaFonte">Xis</div>        
                         <div class="itens-sec">
@@ -156,9 +156,9 @@
                         </div>
                         <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
                     </div>
-                </section>
+                </div>
 
-                <section id="bauru-area" class="itensCardapioInv">
+                <div id="bauru-area" class="itensCardapioInv">
                     <div class="cont-externo">
                         <div class="descItens aumentaFonte">Baurus</div>          
                         <div class="itens-sec">
@@ -183,9 +183,9 @@
                         </div>
                         <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
                     </div>
-                </section>  
+                </div>  
                 
-                <section id="burger-area" class="itensCardapioInv">
+                <div id="burger-area" class="itensCardapioInv">
                     <div class="cont-externo">
                         <div class="descItens aumentaFonte">Hambúrgueres</div>             
                         <div class="itens-sec">
@@ -213,9 +213,9 @@
                         </div>
                         <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
                     </div>
-                </section>
+                </div>
                 
-                <section id="porcoes-area" class="itensCardapioInv">
+                <div id="porcoes-area" class="itensCardapioInv">
                     <div class="cont-externo">
                         <div class="descItens aumentaFonte">Porções</div>           
                         <div class="itens-sec">
@@ -237,9 +237,9 @@
                         </div>
                         <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
                     </div>
-                </section> 
+                </div> 
                
-                <section id="refri-area" class="itensCardapioInv">
+                <div id="refri-area" class="itensCardapioInv">
                     <div class="cont-externo">
                         <div class="descItens aumentaFonte">Refrigerantes</div>          
                         <div class="itens-sec">
@@ -266,9 +266,9 @@
                         </div>
                         <button class="voltar" onclick="location.href='#cardapio'">voltar</button>
                     </div>
-                </section> 
+                </div> 
                 
-                <section id="suco-area" class="itensCardapioInv">
+                <div id="suco-area" class="itensCardapioInv">
                     <div class="cont-externo">
                         <div class="descItens aumentaFonte">Sucos</div>          
                         <div class="itens-sec">
@@ -295,9 +295,9 @@
                         </div>
                         <button class="voltar" onclick="top_button_func()">voltar</button>
                     </div>
-                </section> 
+                </div> 
                 
-                <section id="cerveja-area" class="itensCardapioInv">
+                <div id="cerveja-area" class="itensCardapioInv">
                     <div class="cont-externo">
                         <div class="descItens aumentaFonte">Cervejas</div>              
                         <div class="itens-sec">
@@ -324,9 +324,9 @@
                         </div>
                         <button class="voltar" onclick="top_button_func()">voltar</button>
                     </div>
-                </section>
+                </div>
                
-                <section id="drink-area" class="itensCardapioInv">
+                <div id="drink-area" class="itensCardapioInv">
                     <div class="cont-externo">
                         <div class="descItens aumentaFonte">Drinks</div>              
                         <div class="itens-sec">
@@ -353,7 +353,7 @@
                         </div>
                         <button class="voltar" onclick="top_button_func()">voltar</button>
                     </div> 
-                </section>
+                </div>
                 
         </section>
         <!-- CONTAINER INFORMAÇÃO -->
@@ -422,21 +422,21 @@
                 <div class="cont-int"> 
                             <form method="post" class="formulario">
                                 <label for="input_nome">Nome: </label>
-                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome">
+                                <input type="text" name="input_nome" id="c_nome_reservas" class="item-form" placeholder="Nome e sobrenome">
                                     
-                                <label for="input_email">Email: </label>   
-                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com">
+                                <label for=c_email_reservas>Email: </label>   
+                                <input type="email" name="input_email" id="c_email_reservas" class="item-form" placeholder="email@email.com">
 
-                                <label for="input_numpes">Nº de pessoas: </label>
+                                <label for="c_numpes">Nº de pessoas: </label>
                                 <input type="number" name="input_numpes" class="item-form" id="c_numpes" >
                                     
-                                <label for="input_data">Data: </label>
+                                <label for="c_data">Data: </label>
                                 <input type="date" name="input_data" id="c_data" class="item-form">
                              
-                                <label for="input_horario">Horário: </label>
+                                <label for="c_horario">Horário: </label>
                                 <input type="time" name="input_horario" class="item-form" id="c_horario" >
                                          
-                                <input type="submit" id="submit-reservas" class="item-form" value="Enviar"/>
+                                <input type="submit" id="submit-reservas" class="item-form" value="Enviar">
                             </form>
                         <img src="img/reserva_img.png" alt="figura minimalista de uma mão apontando para uma data em um calendário de mesa" class="img-reserva">                    
                     </div>
@@ -451,21 +451,21 @@
                 <div class="cont-int">
                         <form method="post" class="formulario">
                                 <label for="input_nome">Nome: </label>
-                                <input type="text" name="input_nome" id="c_nome" class="item-form" placeholder="Nome e sobrenome">
+                                <input type="text" name="input_nome" id="c_nome_contato" class="item-form" placeholder="Nome e sobrenome">
                            
-                                <label for="input_email">Email: </label>
-                                <input type="email" name="input_email" id="c_email" class="item-form" placeholder="email@email.com">
+                                <label for="c_email_contato">Email: </label>
+                                <input type="email" name="input_email" id="c_email_contato" class="item-form" placeholder="email@email.com">
                            
-                                <label for="input_msg">Mensagem: </label>
-                                <textarea type="text" name="input_msg" id="c_msg" cols="45" rows="3" class="item-form" placeholder="Escreva aqui sua mensagem!"></textarea>
+                                <label for="c_msg">Mensagem: </label>
+                                <textarea name="input_msg" id="c_msg" cols="45" rows="3" class="item-form" placeholder="Escreva aqui sua mensagem!"></textarea>
                             
                             <fieldset id="fieldset_aval">
                                 <legend>Avalie nosso site: </legend>
-                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_ruim"> Ruim
-                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_medio">Médio
-                                    <input type="radio" class="radiobutton" class="item-form" name="input_aval" class="item-form" id="c_bom">Bom              
+                                    <input type="radio" class="radiobutton item-form" name="input_aval" class="item-form" id="c_ruim"> Ruim
+                                    <input type="radio" class="radiobutton item-form" name="input_aval" class="item-form" id="c_medio">Médio
+                                    <input type="radio" class="radiobutton item-form" name="input_aval" class="item-form" id="c_bom">Bom              
                             </fieldset>
-                            <input type="submit" id="submit-contato" class="item-form submit" value="Enviar"/>
+                            <input type="submit" id="submit-contato" class="item-form submit" value="Enviar">
                         </form>
                     <img src="img/contato_img.png" alt="figura minimalista de um envelope de cartas se deslocando em alta velocidade" class="img-contato">                    
                 </div>
